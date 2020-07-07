@@ -28,7 +28,7 @@ The benchmark (workload) was divided into two categories.
  ### 3. LRU-Insertion Policy (LIP)
  
  ```markdown
- 
+ ![Figure1. LRU-Insertion Policy](./img/LIP.png)
  
  
  ```
