@@ -2,11 +2,12 @@
 
 ## Summary
 
-In this project, I implemented DIP (Dynamic Insertion Policy), TIP (Triple Insertion Policy) to improve cacche performance. For the mcf Benchmark, DIP and TIP improved L2 cache performance by 0.57% and also reduced the L2 cache miss rate by 1.74% compared to the LRU replacement policy.
+In this project, I implemented DIP (Dynamic Insertion Policy), TIP (Triple Insertion Policy) to improve cacche performance. For the mcf Benchmark, DIP and TIP improved L2 cache performance by 0.57% and also reduced the L2 cache miss rate by 1.74% compared to the LRU replacement policy. 
 
 ## Motivation
 
-When a system having a cache hierarchy applies the LRU replacement policy equally to the L1 and L2 caches, performance degradation due to the L2 cache characteristics.
+When a system having a cache hierarchy applies the LRU replacement policy equally to the L1 and L2 caches, performance degradation due to the L2 cache characteristics. When L2 cache size is smaller than working-set, there ar
+e considerable number of cache lines that do not referenced between insertion and eviction. Thus, we need a replacement policy for for retaining the cache lines longer than the cache capacity. By using an adaptive insertion policy based on the nature of workload, we can reduce cache misses and improve the performance of cache.
 
 ## Background
 
@@ -22,7 +23,20 @@ The replacement policy process was divided into two categories.
 The benchmark (workload) was divided into two categories.
 
  - LRU-friendly : Working-set is smaller than the available cache size  
- - LRU-averse : Working- set is bigger than the availalbe cache size
+ - LRU-averse : Working-set is bigger than the availalbe cache size
+ 
+ ### 3. LRU-Insertion Policy (LIP)
+ 
+ ```markdown
+ 
+ 
+ ```
+ 
+ ### 4. Bimodal Insertion Policy (BIP)
+ 
+ ### 5. Dynamic Insertion Policy (DIP)
+ 
+ ### 6. Triple Insertion Policy (TIP)
  
 
 
