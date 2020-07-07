@@ -1,12 +1,12 @@
-## Final Project
+# Final Project
 
-### Summary
+## Summary
 
-In this project, I implemented DIP (Dynamic Insertion Policy), TIP (Triple Insertion Policy) to improve cacche performance. 
+In this project, I implemented DIP (Dynamic Insertion Policy), TIP (Triple Insertion Policy) to improve cacche performance.
 For the mcf Benchmark, DIP and TIP improved L2 cache performance by 0.57% and also reduced the L2 cache miss rate by 1.74%
 compared to the LRU replacement policy.
 
-### Background
+## Background
 
 # 1. Replacement Policy
 
