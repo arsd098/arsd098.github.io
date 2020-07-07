@@ -52,7 +52,7 @@ TIP is a replacement policy similar to DIP. However, the difference is that the 
 
 ## Experiment
 
-Measurement of cache performance and miss rate was performed under the following conditions :
+Measurement of cache performance and L2 cache miss rate was performed under the following conditions :
 
 - Benchmark : mcf
 - L2 Cache : 16-way, 4MB size
@@ -60,7 +60,13 @@ Measurement of cache performance and miss rate was performed under the following
 
 ## Result
 
- <div><img src="https://user-images.githubusercontent.com/62246945/86758398-ce6ec680-c07e-11ea-98d2-c1641ce1ca7b.png" width="300" height="200"><img src="https://user-images.githubusercontent.com/62246945/86758490-ddee0f80-c07e-11ea-83f4-c652e5625706.png" width="300" height="200"></div>
+ <center><div><img src="https://user-images.githubusercontent.com/62246945/86758398-ce6ec680-c07e-11ea-98d2-c1641ce1ca7b.png" width="300" height="200"><img src="https://user-images.githubusercontent.com/62246945/86758490-ddee0f80-c07e-11ea-83f4-c652e5625706.png" width="300" height="200"></div></center>
+ 
+LIP, BIP, DIP, and TIP all have improved performance (IPC) and lower L2 cache miss rates compared to LRU. In particular, DIP and TIP insertion policies involve comparing replacment policies, but show better performance than LRU policy. This is because the latency caused by the L2 cache miss has a greater negative impact on performance than the overhead caused by comparing the replacement policies.
+
+## Conclusion
+
+In this project, i improved the performance and reduced the L2 cache miss rate by solving the limitations of the existing cache hierarchy system. For the mcf Benchmark, DIP and TIP improved L2 cache performance by 0.57% and also reduced the L2 cache miss rate by 1.74% compared to the LRU replacement policy. Since i couldn't compare the various benchmarks, so i couldn't see the distinct performance and difference in L2 cache miss rates according to replacement policies. However, it is meaningful in that it implemented a replacement policy that flexibly applies according to the characteristics of the benchmark by comparing multiple replacement policies such as TIP and DIP that were not implemented in the existing Gem5. 
 
 
 
