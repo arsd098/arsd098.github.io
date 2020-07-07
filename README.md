@@ -1,8 +1,9 @@
-## Final Project : JeoungAhn Park
+## Final Project
 
 ### Summary
 
-
+ In this project, I implemented DIP (Dynamic Insertion Policy), TIP (Triple Insertion Policy) to improve cacche performance.
+ dddd
 
 ### Markdown
 
