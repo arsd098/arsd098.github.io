@@ -2,9 +2,11 @@
 
 ## Summary
 
-In this project, I implemented DIP (Dynamic Insertion Policy), TIP (Triple Insertion Policy) to improve cacche performance.
-For the mcf Benchmark, DIP and TIP improved L2 cache performance by 0.57% and also reduced the L2 cache miss rate by 1.74%
-compared to the LRU replacement policy.
+In this project, I implemented DIP (Dynamic Insertion Policy), TIP (Triple Insertion Policy) to improve cacche performance. For the mcf Benchmark, DIP and TIP improved L2 cache performance by 0.57% and also reduced the L2 cache miss rate by 1.74% compared to the LRU replacement policy.
+
+## Motivation
+
+When a system having a cache hierarchy applies the LRU replacement policy equally to the L1 and L2 caches, performance degradation due to the L2 cache characteristics.
 
 ## Background
 
@@ -12,8 +14,17 @@ compared to the LRU replacement policy.
 
 The replacement policy process was divided into two categories.  
 
-- Victim selection policy :   
-- Insertion selection policy : 
+- Victim selection policy : To determine which line to remove from the list
+- Insertion selection policy : To determine where to place incoming lines in the list
+
+### 2. Benchmark
+
+The benchmark (workload) was divided into two categories.
+
+ - LRU-friendly : Working-set is smaller than the available cache size  
+ - LRU-averse : Working- set is bigger than the availalbe cache size
+ 
+
 
 
 Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
