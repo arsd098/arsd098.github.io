@@ -29,9 +29,17 @@ The benchmark (workload) was divided into two categories.
 
 <center><img src="https://user-images.githubusercontent.com/62246945/86744834-dc1f4e80-c074-11ea-85e9-1c85266f46b0.png" width="600" height="300"></center>
 
+ LIP selects the line at the LRU position as the victim. And all incoming lines located in LRU position. The disadvantage of LIP is that if the line at the MRU position is not reused, it will continue to occupy the cache. If the line at the MRU position is a non-reused line, the cache misses increases by reducing the capacity of cache.
+
  ### 4. Bimodal Insertion Policy (BIP)
  
+ <center><img src="https://user-images.githubusercontent.com/62246945/86749960-96648500-c078-11ea-86e8-83d084c064d6.png" width="500" height="200"></center>
+ 
+  BIP is a replacement policy that solves the disadvantages of LIP. The variable called ε(Bimodal throttle parameter) is used to insert the incoming line into the MRU position by a certain probability. However, BIP also has the disadvantage that it performs poorly on the LRU-friendly benchmark.
+ 
  ### 5. Dynamic Insertion Policy (DIP)
+ 
+  <center><img src="https://user-images.githubusercontent.com/62246945/86751843-e859da80-c079-11ea-82ae-00f0c4314fdf.png" width="300" height="600"></center>
  
  ### 6. Triple Insertion Policy (TIP)
  
