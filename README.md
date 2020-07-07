@@ -26,11 +26,8 @@ The benchmark (workload) was divided into two categories.
  - LRU-averse : Working-set is bigger than the availalbe cache size  
  
  ### 3. LRU-Insertion Policy (LIP)
- 
 
- ![LIP](https://user-images.githubusercontent.com/62246945/86744834-dc1f4e80-c074-11ea-85e9-1c85266f46b0.png){: width="100" height="100"}
- 
- <img src="https://user-images.githubusercontent.com/62246945/86744834-dc1f4e80-c074-11ea-85e9-1c85266f46b0.png" width="300" height="300">
+<center><img src="https://user-images.githubusercontent.com/62246945/86744834-dc1f4e80-c074-11ea-85e9-1c85266f46b0.png" width="900" height="600"></center>
 
  ### 4. Bimodal Insertion Policy (BIP)
  
