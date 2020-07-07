@@ -42,39 +42,26 @@ The benchmark (workload) was divided into two categories.
  
   <center><img src="https://user-images.githubusercontent.com/62246945/86751843-e859da80-c079-11ea-82ae-00f0c4314fdf.png" width="400" height="400"></center>
   
-  DIP is a replacement policy that solves the disadvantages of BIP. DIP is a replacement policy of selecting and applying the optimal policy considering the characteristics of the benchmark. In this project, i implemented DIP comparing BIP and LRU policies. I divided the whole set of instructions by LRU test-set, BIP test-set, rest-set. At this time, LRU & BIP test-set size is very small compared to rest-set. In LRU test-set, LRU policy is performed and the cache misses are measured. In BIP test-set, BIP policy is performed and the cache misses are measured. Of the two policies, the policy with the least miss is applied to rest-set.
+  DIP is a replacement policy that solves the disadvantages of BIP. DIP is a replacement policy of selecting and applying the optimal policy considering the characteristics of the benchmark. In this project, i implemented DIP comparing BIP and LRU policies. I divided the whole set of instructions by LRU test-set, BIP test-set, rest-set. At this time, LRU & BIP test-set size is very small compared to rest-set. In LRU test-set, LRU policy is performed and the cache misses are measured. In BIP test-set, BIP policy is performed and the cache misses are measured. Of the two policies, the policy with the least miss is applied to rest-set. The active function was used to obtain the optimal policy among the two replacement policies.
 
 ### 6. Triple Insertion Policy (TIP)
  
  <center><img src="https://user-images.githubusercontent.com/62246945/86754034-839f7f80-c07b-11ea-870f-fbf67195eda2.png" width="400" height="400"></center>
 
+TIP is a replacement policy similar to DIP. However, the difference is that the three replacement policies are compared and the optimal replacement policy is applied. In this project, i implemented TIP comparing LIP, BIP and LRU policies. Also, the active function that is different with DIP was used to obtain the optimal policy among the three replacement policies.
 
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
+## Experiment
 
-```markdown
-Syntax highlighted code block
+Measurement of cache performance and miss rate was performed under the following conditions :
 
-# Header 1
-## Header 2
-### Header 3
+- Benchmark : mcf
+- L2 Cache : 16-way, 4MB size
+- L1 replacement policy : LRU policy
 
-- Bulleted
-- List
+## Result
 
-1. Numbered
-2. List
+ <center><img src="https://user-images.githubusercontent.com/62246945/86758398-ce6ec680-c07e-11ea-98d2-c1641ce1ca7b.png" width="400" height="400">
+ <img src="https://user-images.githubusercontent.com/62246945/86758490-ddee0f80-c07e-11ea-83f4-c652e5625706.png" width="400" height="400"></center>
 
-**Bold** and _Italic_ and `Code` text
 
-[Link](url) and ![Image](src)
-```
 
-For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
-
-### Jekyll Themes
-
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/arsd098/arsd098.github.io/settings). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
-
-### Support or Contact
-
-Having trouble with Pages? Check out our [documentation](https://help.github.com/categories/github-pages-basics/) or [contact support](https://github.com/contact) and we’ll help you sort it out.
