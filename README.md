@@ -40,10 +40,12 @@ The benchmark (workload) was divided into two categories.
  ### 5. Dynamic Insertion Policy (DIP)
  
   <center><img src="https://user-images.githubusercontent.com/62246945/86751843-e859da80-c079-11ea-82ae-00f0c4314fdf.png" width="400" height="400"></center>
+  
+  DIP is a replacement policy that solves the disadvantages of BIP. DIP is a replacement policy of selecting and applying the optimal policy considering the characteristics of the benchmark. In this project, i implemented DIP comparing BIP and LRU policies. I divided the whole set of instructions by LRU test-set, BIP test-set, rest-set. At this time, LRU & BIP test-set size is very small compared to rest-set. In LRU test-set, LRU policy is performed and the cache misses are measured. In BIP test-set, BIP policy is performed and the cache misses are measured. Of the two policies, the policy with the least miss is applied to rest-set.
  
  ### 6. Triple Insertion Policy (TIP)
  
-
+ <center><img src="https://user-images.githubusercontent.com/62246945/86754034-839f7f80-c07b-11ea-870f-fbf67195eda2.png" width="400" height="400"></center>
 
 
 Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
