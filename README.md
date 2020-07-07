@@ -30,7 +30,7 @@ The benchmark (workload) was divided into two categories.
  - dddddd
  
  ```markdown
-![LIP](https://user-images.githubusercontent.com/62246945/86744834-dc1f4e80-c074-11ea-85e9-1c85266f46b0.png)
+<img ser="https://user-images.githubusercontent.com/62246945/86744834-dc1f4e80-c074-11ea-85e9-1c85266f46b0.png" width = "90%">
  
  
  
