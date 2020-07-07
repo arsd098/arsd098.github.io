@@ -1,0 +1,9 @@
+#!/bin/sh
+
+cd /home/gem5
+
+/sbin/m5 resetstats
+
+./pthread_matrixmul 2
+
+/sbin/m5 exit
