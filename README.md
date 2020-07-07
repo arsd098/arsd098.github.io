@@ -30,6 +30,7 @@ The benchmark (workload) was divided into two categories.
  ```markdown
  
  
+ 
  ```
  
  ### 4. Bimodal Insertion Policy (BIP)
