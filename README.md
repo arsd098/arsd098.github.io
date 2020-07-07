@@ -28,7 +28,7 @@ The benchmark (workload) was divided into two categories.
  ### 3. LRU-Insertion Policy (LIP)
  
 
- ![LIP](https://user-images.githubusercontent.com/62246945/86744834-dc1f4e80-c074-11ea-85e9-1c85266f46b0.png =100X50)
+ ![LIP](https://user-images.githubusercontent.com/62246945/86744834-dc1f4e80-c074-11ea-85e9-1c85266f46b0.png){: width="100" height="100"}
 
  ### 4. Bimodal Insertion Policy (BIP)
  
