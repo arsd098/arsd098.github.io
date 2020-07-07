@@ -8,9 +8,13 @@ compared to the LRU replacement policy.
 
 ## Background
 
-# 1. Replacement Policy
+### 1. Replacement Policy
 
-The replacement policy process divided into two categories.
+The replacement policy process was divided into two categories.  
+
+- Victim selection policy :   
+- Insertion selection policy : 
+
 
 Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
 
