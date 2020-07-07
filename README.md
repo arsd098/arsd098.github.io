@@ -60,7 +60,7 @@ Measurement of cache performance and miss rate was performed under the following
 
 ## Result
 
- <center><img src="https://user-images.githubusercontent.com/62246945/86758398-ce6ec680-c07e-11ea-98d2-c1641ce1ca7b.png" width="400" height="400"><img src="https://user-images.githubusercontent.com/62246945/86758490-ddee0f80-c07e-11ea-83f4-c652e5625706.png" width="400" height="400"></center>
+ <div><img src="https://user-images.githubusercontent.com/62246945/86758398-ce6ec680-c07e-11ea-98d2-c1641ce1ca7b.png" width="400" height="400"><img src="https://user-images.githubusercontent.com/62246945/86758490-ddee0f80-c07e-11ea-83f4-c652e5625706.png" width="400" height="400"></div>
 
 
 
